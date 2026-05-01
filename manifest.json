@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "SteamDealTrace",
+  "version": "1.0.0",
+  "description": "Overlay badges for Steam inventory tiles based on market buy/sell history.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://steamcommunity.com/profiles/*/inventory*",
+        "https://steamcommunity.com/id/*/inventory*"
+      ],
+      "js": [
+        "inventory-history-overlay.js"
+      ],
+      "css": [
+        "inventory-history-overlay.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "https://steamcommunity.com/*"
+  ]
+}

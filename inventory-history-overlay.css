@@ -1,0 +1,78 @@
+.inv-history-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+  padding: 4px 6px;
+  border-radius: 3px;
+  background: rgba(22, 32, 45, 0.8);
+  border: 1px solid rgba(120, 140, 170, 0.35);
+  font-size: 12px;
+  color: #c6d4df;
+}
+
+.inv-history-controls button {
+  background: linear-gradient(180deg, #6f8ea6 0%, #3a556a 100%);
+  border: 1px solid #2d4457;
+  border-radius: 2px;
+  color: #fff;
+  padding: 3px 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.inv-history-controls button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.inv-history-controls .small-input {
+  width: 115px;
+  min-height: 22px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(120, 140, 170, 0.4);
+  color: #fff;
+  border-radius: 2px;
+  padding: 1px 4px;
+}
+
+.inv-history-controls .status {
+  opacity: 0.85;
+  max-width: 260px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemHolder .item.inv-history-buy {
+  box-shadow: inset 0 0 0 2px rgba(220, 75, 75, 0.8);
+  background-color: rgba(220, 75, 75, 0.14) !important;
+}
+
+.itemHolder .item.inv-history-sell {
+  box-shadow: inset 0 0 0 2px rgba(83, 189, 103, 0.9);
+  background-color: rgba(83, 189, 103, 0.15) !important;
+}
+
+.itemHolder .item .history-overlay {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.3;
+  z-index: 4;
+  border-radius: 2px;
+  padding: 2px 4px;
+  pointer-events: none;
+}
+
+.itemHolder .item .history-price.buy {
+  color: #ff9393;
+}
+
+.itemHolder .item .history-price.sell {
+  color: #8cff9b;
+}
