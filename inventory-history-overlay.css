@@ -80,4 +80,5 @@
 #invHistoryControlsWrapper {
   position: relative;
   z-index: 9999;
+  margin: 12px 0 8px 48px;
 }
