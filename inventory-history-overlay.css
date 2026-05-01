@@ -58,8 +58,8 @@
   position: absolute;
   left: 2px;
   right: 2px;
-  bottom: 2px;
-  background: rgba(0, 0, 0, 0.72);
+  bottom: 28px;
+  background: rgba(0, 0, 0, 0.3);
   color: #fff;
   font-size: 11px;
   line-height: 1.3;
