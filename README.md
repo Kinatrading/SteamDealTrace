@@ -1,4 +1,4 @@
-# Тест інвентарю — Inventory History Overlay
+# SteamDealTrace
 
 Мінімальне MV3-розширення для Steam Inventory (`appid=730`, `contextid=2`), яке додає control bar біля `#inventory_logos` та підсвічує тайли інвентарю на основі Market History.
 
