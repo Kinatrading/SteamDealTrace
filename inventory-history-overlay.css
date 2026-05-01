@@ -76,3 +76,8 @@
 .itemHolder .item .history-price.sell {
   color: #8cff9b;
 }
+
+#invHistoryControlsWrapper {
+  position: relative;
+  z-index: 9999;
+}
