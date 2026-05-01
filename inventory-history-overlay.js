@@ -693,13 +693,11 @@ function detectHistoryAction(actionText, gainOrLossText) {
 
 	const wrapper = document.createElement('div');
 	wrapper.id = 'invHistoryControlsWrapper';
-	wrapper.style.margin = '0 0 10px 0';
-	wrapper.style.display = 'flex';
-	wrapper.style.alignItems = 'center';
-	wrapper.style.justifyContent = 'flex-start';
-	
 	wrapper.appendChild(bar);
-	logos.parentNode.insertBefore(wrapper, logos);
+	
+	if (logos && logos.parentNode) {
+	  logos.parentNode.insertBefore(wrapper, logos);
+	}
 
     return {
       syncBtn: bar.querySelector('#invHistorySync'),
